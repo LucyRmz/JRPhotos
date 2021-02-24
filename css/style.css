@@ -101,9 +101,7 @@ img{
     margin-top: 1rem;
     color: white;
     text-decoration: none;
-    text-transform: uppercase;
     font-weight: 700;
-    font-size: 2rem;
     border-radius: 3rem;
     border: none;
 }
@@ -285,7 +283,7 @@ img{
 @media (min-width: 768px){
     .contenedor-contacto{
         display: grid;
-        grid-template-columns: 2fr 2fr;
+        grid-template-columns: 2fr 1.5fr;
     }
 }
 
@@ -293,7 +291,8 @@ img{
 .estilo-lista, .lista-iconos{
     list-style: none;
     padding-inline-start: 1rem;
-    padding: 2rem;
+    margin-block-start: 0;
+    padding: 3rem;
 }
 .lista-iconos i{
     color: #fcb103;
@@ -305,7 +304,6 @@ img{
 .form-contacto{
     background-color: #FFFFFF;
     padding: 3rem;
-    margin-top: 1rem;
 }
 @media (min-width: 768px){
     .form-contacto{
@@ -315,7 +313,7 @@ img{
 .form-contacto .campo{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 .form-contacto .campo label{
     flex: 0 0 8rem;
@@ -328,11 +326,27 @@ img{
     padding: 1rem;
 }
 .form-contacto textarea{
-    height: 20rem;
+    height: 15rem;
 }
 .form-contacto .enviar{
     display: flex;
     justify-content: flex-end;
 }
 
+/*Mapa de contacto*/
+
+.iframe-16-9 {
+    position: relative;
+    padding-bottom: 37.5%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+.iframe-16-9  iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
