@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jorge Ramirez</title>
+    <title>JorgeRamirezPhotos</title>
     <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7265c96cc1.js" crossorigin="anonymous" rel="stylesheet"></script>
     <link rel="stylesheet" href="css/normalize.css">
@@ -11,6 +11,7 @@
 
 <body>
     <header class="site-header">
+        <div class="contenedor">
             <div class="barra">
                 <!--BRAND-->
                 <a href="index.html">
@@ -18,40 +19,85 @@
                 </a>
                 <!--NAVEGACION-->
                 <nav class="navegacion fw-300">
-                    <a href="nosotros.html">Nosotros</a>
+                    <a href="servicios.html">Servicios</a>
                     <a href="galeria.html">Galeria</a>
                     <a href="contacto.html">Contacto</a>
                 </nav>
             </div><!--FIN BARRA-->
+        
+            <div class="texto-header">
+                <h1>Fotografia y Video</h1>
+                <p><i class="fas fa-map-marked-alt"></i> Salina Cruz, Oaxaca</p>
+                <a href="contacto.html" class="btn btn-primario">Contactar</a>
+            </div>
+        
+        </div><!--FIN CONTENEDOR-->
     </header>
 
-    <main class="contenedor">
-        <h2 class="centrar-texto">Contáctanos</h2>
-        
-        <div class="wrapper">
-            <div class="img-contacto"></div>
-            <!--Inicia formulario-->
-            <div class="form-contacto">
-                <form action="#">
-                    <div class="campo">
-                        <label for="nombre">Nombre: </label>
-                        <input type="text" id="nombre" placeholder="Juan Pérez">
-                    </div>
-                    <div class="campo">
-                        <label for="email">Email: </label>
-                        <input type="email" id="email" placeholder="micorreo@gmail.com">
-                    </div>
-                    <div class="campo mensaje">
-                        <label for="mensaje">Mensaje: </label>
-                        <textarea id="mensaje" placeholder="Escribe tu mensaje..."></textarea>
-                    </div>
-                    <div class="campo enviar">
-                        <input type="submit" class="boton boton-primario">
-                    </div>
-                </form>
+    <div class="contenedor">
+        <main>
+            <h2 class="centrar-texto uppercase">contacta con nosotros</h2>
+            <!--MAPA DE UBICACION-->
+            <div>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1915.9242438443544!2d-95.1910273739971!3d16.176761872639947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85bfe664ae61abd3%3A0xe5546d67388e5fea!2sCalle%20Acapulco%2C%20Santa%20Rosa%2C%2070670%20Salina%20Cruz%2C%20Oax.!5e0!3m2!1ses-419!2smx!4v1614148699634!5m2!1ses-419!2smx"
+                    width="1200" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
             </div>
-        </div>
-    </main>
+
+            <!--FORMULARIO Y DATOS DE CONTACTO-->
+            <div class="contenedor-contacto">
+                <!--Inicia formulario-->
+                <div class="form-contacto">
+                    <h3>Formulario de contacto</h3>
+                    <form action="#">
+                        <div class="campo">
+                            <label for="nombre">Nombre: </label>
+                            <input type="text" id="nombre">
+                        </div>
+                        <div class="campo">
+                            <label for="email">Email: </label>
+                            <input type="email" id="email">
+                        </div>
+                        <div class="campo">
+                            <label for="telefono">Telefono: </label>
+                            <input type="tel" id="telefono">
+                        </div>
+                        <div class="campo mensaje">
+                            <label for="mensaje">Mensaje: </label>
+                            <textarea id="mensaje"></textarea>
+                        </div>
+                        <div class="campo enviar">
+                            <input type="submit" class="btn btn-primario">
+                        </div>
+                    </form>
+                </div><!--fin formulario-->
+
+                <!--Datos de contacto-->
+                <div class="">
+                    <ul class="estilo-lista lista-iconos">
+                        <h3>Datos de contacto</h3>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>Direccion: Col. Centro, Salina Cruz, Oaxaca C.P. 70600
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i> Telefono: 971 234 8763
+                        </li>
+                        <li>
+                            <i class="fas fa-at"></i> Email: JorgeRamirezPhotos@gmail.com
+                        </li>
+                    </ul>
+
+                    <ul class="estilo-lista">
+                        <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1915.9242438443544!2d-95.1910273739971!3d16.176761872639947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85bfe664ae61abd3%3A0xe5546d67388e5fea!2sCalle%20Acapulco%2C%20Santa%20Rosa%2C%2070670%20Salina%20Cruz%2C%20Oax.!5e0!3m2!1ses-419!2smx!4v1614148699634!5m2!1ses-419!2smx"
+                    width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
 
     <footer class="site-footer">
         <div class="contenedor">
@@ -59,7 +105,7 @@
                 <h1 class="no-margin">JorgeRamirez<span>Photos</span></h1>
 
                 <nav class="navegacion fw-300">
-                    <a href="nosotros.html">Nosotros</a>
+                    <a href="servicios.html">Servicios</a>
                     <a href="galeria.html">Galeria</a>
                     <a href="contacto.html">Contacto</a>
                 </nav>

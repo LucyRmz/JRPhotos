@@ -12,7 +12,8 @@ body{
     font-family: 'Krub', sans-serif;
     font-size: 1.6rem;
     line-height: 2;
-    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    background-color: darkgrey;
+    /*background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);*/
 }
 
 .contenedor{
@@ -55,6 +56,7 @@ img{
 }
 .uppercase{
     text-transform: uppercase;
+    color: #FFFFFF;
 }
 .box-shadow{
     padding: 3rem;
@@ -214,6 +216,11 @@ img{
     align-items: center;
     background-color: #FFFFFF;
 }
+.servicio p{
+    text-align: center;
+    padding: 1rem;
+    margin-top: 0;
+}
 .iconos{
     width: 100px;
     height: 100px;
@@ -225,7 +232,7 @@ img{
     margin-top: 2rem;
 }
 .iconos{
-    font-size: 3rem;
+    font-size: 5rem;
 }
 
 /*Footer*/
@@ -248,39 +255,61 @@ img{
 }
 
 
-/*Contacto*/
-.wrapper{
-    box-shadow: 0 0 2rem 0 rgba(72, 94, 11, 0.7);
-}
-/*Full Screen*/
+/*Contacto home*/
 
-@media (min-width: 768px){
-    .wrapper{
-        display: grid;
-        grid-template-columns: 1.5fr 2fr;
-    }
-}
-
-.img-contacto{
-    background-image: url(../img/contacto.svg);
-    background-repeat: no-repeat;
+.imagen-contacto{
+    background-image:url(../img/foto1.jpg);
     background-position: center center;
-    background-size:contain;
-    height: 30rem;
+    background-size: cover;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+    margin-top: 5rem;
+} 
+.contenido-contacto {
+    flex:0 0 95%;
+    color: #FFFFFF;
 }
+.contenido-contacto p{
+    font-size: 2.5rem;
+    color: #FFFFFF;
+}
+
+/*Contacto*/
+
+.contenedor-contacto{
+    margin-top: 3rem;
+    background-color: #FFFFFF;
+}
+
 @media (min-width: 768px){
-    .img-contacto{
-        height: 50rem;
+    .contenedor-contacto{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
     }
 }
 
+/*datos de contacto*/
+.estilo-lista, .lista-iconos{
+    list-style: none;
+    padding-inline-start: 1rem;
+    padding: 2rem;
+}
+.lista-iconos i{
+    color: #fcb103;
+    font-size: 2rem;
+    padding-right: 1rem;
+}
+
+/*Formulario contacto*/
 .form-contacto{
     background-color: #FFFFFF;
     padding: 3rem;
+    margin-top: 1rem;
 }
 @media (min-width: 768px){
     .form-contacto{
-        margin-top: 1rem;
+        
     }
 }
 .form-contacto .campo{
@@ -305,3 +334,5 @@ img{
     display: flex;
     justify-content: flex-end;
 }
+
+
