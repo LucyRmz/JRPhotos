@@ -1,4 +1,5 @@
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,15 +24,17 @@
                     <a href="galeria.html">Galeria</a>
                     <a href="contacto.html">Contacto</a>
                 </nav>
-            </div><!--FIN BARRA-->
-        
+            </div>
+            <!--FIN BARRA-->
+
             <div class="texto-header">
                 <h1>Fotografia y Video</h1>
                 <p><i class="fas fa-map-marked-alt"></i> Salina Cruz, Oaxaca</p>
                 <a href="contacto.html" class="btn btn-primario">Contactar</a>
             </div>
-        
-        </div><!--FIN CONTENEDOR-->
+
+        </div>
+        <!--FIN CONTENEDOR-->
     </header>
 
     <div class="contenedor">
@@ -39,39 +42,41 @@
             <h2 class="centrar-texto uppercase">contacta con nosotros</h2>
             <!--MAPA DE UBICACION-->
             <div class="iframe-16-9">
-                <iframe 
+                <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1915.9242438443544!2d-95.1910273739971!3d16.176761872639947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85bfe664ae61abd3%3A0xe5546d67388e5fea!2sCalle%20Acapulco%2C%20Santa%20Rosa%2C%2070670%20Salina%20Cruz%2C%20Oax.!5e0!3m2!1ses-419!2smx!4v1614148699634!5m2!1ses-419!2smx"
-                    frameborder="0" marginwidth="0" marginheight="0" style="border:0;" allowfullscreen="" loading="lazy">
+                    frameborder="0" marginwidth="0" marginheight="0" style="border:0;" allowfullscreen=""
+                    loading="lazy">
                 </iframe>
-            </div>
+            </div><!--FIN MAPA DE UBICACION-->
 
             <!--FORMULARIO Y DATOS DE CONTACTO-->
             <div class="contenedor-contacto">
                 <!--Inicia formulario-->
                 <div class="form-contacto">
                     <h3>Formulario de contacto</h3>
-                    <form action="#">
+                    <form action="enviar.php" method="POST">
                         <div class="campo">
                             <label for="nombre">Nombre: </label>
-                            <input type="text" id="nombre">
+                            <input type="text" id="nombre" name="nombre" required>
                         </div>
                         <div class="campo">
                             <label for="email">Email: </label>
-                            <input type="email" id="email">
+                            <input type="email" id="email" name="email" required>
                         </div>
                         <div class="campo">
                             <label for="telefono">Telefono: </label>
-                            <input type="tel" id="telefono">
+                            <input type="tel" id="telefono" name="telefono" required>
                         </div>
                         <div class="campo mensaje">
                             <label for="mensaje">Mensaje: </label>
-                            <textarea id="mensaje"></textarea>
+                            <textarea id="mensaje" name="mensaje" required></textarea>
                         </div>
                         <div class="campo enviar">
-                            <input type="submit" class="btn btn-primario">
+                            <input type="submit" class="btn btn-primario" id="btnEnviar" onclick="msjEnviado()">
                         </div>
                     </form>
-                </div><!--fin formulario-->
+                </div>
+                <!--fin formulario-->
 
                 <!--Datos de contacto-->
                 <div class="">
@@ -87,18 +92,12 @@
                             <i class="fas fa-at"></i> Email: JorgeRamirezPhotos@gmail.com
                         </li>
                     </ul>
-                <!--
-                    <div class="iframe-16-9">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1915.9242438443544!2d-95.1910273739971!3d16.176761872639947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85bfe664ae61abd3%3A0xe5546d67388e5fea!2sCalle%20Acapulco%2C%20Santa%20Rosa%2C%2070670%20Salina%20Cruz%2C%20Oax.!5e0!3m2!1ses-419!2smx!4v1614148699634!5m2!1ses-419!2smx"
-                            frameborder="0" marginwidth="0" marginheight="0" style="border:0;" allowfullscreen="" loading="lazy">
-                        </iframe>
-                    </div>-->
                 </div>
+                <!--Fin Datos de contacto-->
             </div>
         </main>
     </div>
-
+    <!--Footer-->
     <footer class="site-footer">
         <div class="contenedor">
             <div class="barra">
@@ -112,6 +111,6 @@
             </div>
         </div>
     </footer>
-
 </body>
+
 </html>
