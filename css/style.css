@@ -12,7 +12,7 @@ body{
     font-family: 'Krub', sans-serif;
     font-size: 1.6rem;
     line-height: 2;
-    background-color: darkgrey;
+    background-color: rgba(0, 0, 0, 0.787);
     /*background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);*/
 }
 
@@ -213,6 +213,7 @@ img{
     flex-direction: column;
     align-items: center;
     background-color: #FFFFFF;
+    margin-top: 1rem;
 }
 .servicio p{
     text-align: center;
@@ -305,11 +306,7 @@ img{
     background-color: #FFFFFF;
     padding: 3rem;
 }
-@media (min-width: 768px){
-    .form-contacto{
-        
-    }
-}
+
 .form-contacto .campo{
     display: flex;
     justify-content: space-between;
@@ -350,3 +347,31 @@ img{
     height: 100%;
 }
 
+/*Galeria*/
+
+.contenedor-galeria{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 25rem;
+    padding: 1rem;
+    grid-gap: 1.5rem;
+}
+
+.galeria-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: all(0.5s);
+}
+.galeria-img:hover{
+    transform: scale(1.02);
+}
+
+.galeria-item:nth-child(2){
+    grid-row-start: span 3;
+}
+
+.galeria-item:nth-child(9){
+    grid-column-start: span 2;
+}
