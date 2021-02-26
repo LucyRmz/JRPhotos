@@ -8,7 +8,7 @@
     $mensaje = $_POST["mensaje"];
 
     //Contenido del correo
-    $destino = "jrPhotos@gmail.com";
+    $destino = "lucy.lrmz@gmail.com";
     $asunto = "JorgeRamirezPhotos Contacto";
     $datos = "Nombre: ". $nombre . "\nCorreo: ". $correo . "\nTelefono: ". $telefono . "\nMensaje: " . $mensaje;
 
